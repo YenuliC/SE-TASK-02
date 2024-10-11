@@ -23,8 +23,8 @@ async function scrapeIkman(keyword) {
             const name = firstResult.querySelector('.title--3yncE')?.textContent.trim() || 'No title';
             const price = firstResult.querySelector('.price--3SnqI')?.textContent.trim() || 'No price';
             const url = 'https://ikman.lk' + (firstResult.querySelector('a')?.getAttribute('href') || '');
-            const location = firstResult.querySelector('.location--2-ez3')?.textContent.trim() || 'No location';
-            const datePosted = firstResult.querySelector('.date--3PTDE')?.textContent.trim() || 'No date';
+            const location = firstResult.querySelector('.description--2-ez3')?.textContent.trim() || 'No location';
+            const datePosted = firstResult.querySelector('.updated-time--1DbCk')?.textContent.trim() || 'No date';
 
             return { name, price, url, location, datePosted };
         });
