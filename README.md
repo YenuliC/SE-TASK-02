@@ -1,14 +1,21 @@
-## Step 1: Install Node.js and npm
+# Instructions
 
-Before you can run the project, you need to install Node.js and npm to your system.
+## 1. Clone the GitHub Repository
 
-`node -v`
-`npm -v`
+`git clone https://github.com/YenuliC/SE-TASK-02.git`
 
-## Step 2: Set Up Your Project Directory
-1. Create a Project Directory
+## 2. Navigate to the Project Directory
 
-`mkdir TASK-02`
-`cd TASK-02`
+`cd SE-TASK-02`
 
-2. Initialize a Node.js Project:
+## 3. Install the dependencies
+
+`npm install`
+
+## 4. Run the Express Server
+
+`node index.js`
+
+## 5. Access the Scraper Endpoint
+
+`http://localhost:3000/scrape?keyword=laptop`
